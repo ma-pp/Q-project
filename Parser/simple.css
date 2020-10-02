@@ -1,0 +1,128 @@
+@font-face {
+	font-family: 'Niloofar';
+	src: local('HM XNiloofar'), url('./KFGQPC Uthmanic Script HAFS Regular/Uthmanic.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Neirizi';
+	src: local('Neirizi'), url('./KFGQPC Uthmanic Script HAFS Regular/Uthmanic.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+* {
+	font-family: "Niloofar";
+	font-size: 1em;
+	/*direction: rtl;*/
+}
+
+.ayaText {
+	direction: rtl;
+	font-size: 1.15em;
+	font-family: "Niloofar";
+	text-align: right;
+	width: 412px;
+	margin: 0px 30px;
+	padding: 16px 14px;
+	color: black;
+}
+
+.verseContent {
+	/*color: black;*/
+	font-size: 100%;
+	font-size: 1.2em;
+	font-family: Neirizi;
+	direction: rtl;
+	/*text-decoration: none;
+	padding: 5px;
+	text-shadow: 1px 1px 1px white;*/
+}
+
+table {
+	table-layout: fixed;
+}
+
+td>* {
+	vertical-align: top;
+	horizontal-align: center;
+	word-wrap: break-word;
+}
+
+body {
+	width: 400px;
+	direction: rtl;
+	flex-wrap: wrap;
+	align-items: justify;
+	justify-content: justify;
+}
+
+.meaning {
+	/*color: black;*/
+	font-size: 40%;
+	font-family: "Arial";
+	/*"Times New Roman";*/
+	word-wrap: break-word;
+	/*flex: 1;*/
+	direction: rtl;
+	/*ltr;*/
+	text-align: right;
+
+	/*text-decoration: none;
+	padding: 5px;
+	text-shadow: 1px 1px 1px white;*/
+}
+
+.ayaNumber {
+	font-family: "Traditional Arabic", "Times New Roman";
+}
+
+.wrapper {
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid */
+	direction: rtl;
+	margin: auto;
+	border: 1px solid #f76707;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.wrapper>div {
+
+	border: 2px solid #ffa94d;
+	/*
+    border-radius: 1px;
+   background-color: #ffd8a8; 
+    padding: 1em; */
+	color: #d9480f;
+}
+
+
+/*https://stackoverflow.com/questions/46207618/flex-items-in-a-row-rendering-at-different-widths*/
+.flex {
+	height: 50px;
+	display: flex;
+	/* flex; inline-flex */
+	/*flex-wrap : wrap;*/
+	flex-direction: row;
+	/*row;*/
+	/*direction: tl;*/
+	/*align-items: flex-start;*/
+
+}
+
+.flex>section {
+	min-width: 20px;
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: top;
+	flex-direction: column;
+	/*; agar arab dan artinya atas dan bawah row*/
+	margin-right: 2px;
+	margin-left: 2px;
+	/*border-top: 1px solid #999; */
+	/*semua flex diberi border untuk debug*/
+	border: border-bottom;
+	border: 1px solid #999;
+}

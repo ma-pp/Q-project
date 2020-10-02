@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- <LinearLayout
+        android:id="@+id/button_panel"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_border"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:text="next" />
+        
+        <Button
+        android:id="@+id/jump_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_shape"
+        android:text="Jump to" />
+    
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="3dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_shape"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="prev" />
+
+    </LinearLayout> -->
+
+    <!-- <WebView
+        android:layout_width="fill_parent"
+        android:id="@+id/webview"
+        android:layout_above="@id/button_panel"
+        android:layout_alignParentTop="true"
+        android:layout_height="fill_parent" /> -->
+
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/webview"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+

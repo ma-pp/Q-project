@@ -1,0 +1,329 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!-- Wajib ada supaya otf/ttf tampil-->
+	<style type="text/css">
+		@font-face {
+			font-family: 'Niloofar';
+			src: local('HM XNiloofar'), url('./UthmanicHafs1\ Ver13.otf') format('truetype');
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		@font-face {
+			font-family: 'Neirizi';
+			src: local('Neirizi'), url('./UthmanicHafs1\ Ver13.otf') format('truetype');
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		* {
+			font-family: "Niloofar";
+			font-size: 1em;
+			/*direction: rtl;*/
+		}
+
+		.ayaNumber {
+			font-family: "Traditional Arabic", "Times New Roman";
+			font-size: medium;
+		}
+
+		body {
+			width: 400px;
+			direction: rtl;
+			flex-wrap: wrap;
+			align-items: justify;
+			justify-content: justify;
+		}
+
+		@media (max-width: 768px) {
+			body {
+				width: 100%;
+				padding-right: 0;
+			}
+
+			.verseContent {
+				font-size: 1.5rem;
+				max-width: 50px;
+			}
+
+			.meaning {
+				/*color: black;*/
+				font-size: 3rem;
+				font-family: "Arial";
+				/*"Times New Roman";*/
+				word-wrap: break-word;
+				text-align: center;
+			}
+
+			.flex>section {
+				justify-content: top;
+				/*; agar arab dan artinya atas dan bawah row*/
+				padding-left: 3px;
+				padding-right: 3px;
+				align-items: center;
+				padding: 0;
+				margin: auto;
+			}
+		}
+
+		.flex {
+			height: 50px;
+			display: flex;
+			/* flex; inline-flex */
+			/*flex-wrap : wrap;*/
+			flex-direction: row;
+			justify-content: space-around;
+			/*row;*/
+			/*direction: tl;*/
+			/*align-items: flex-start;*/
+		}
+
+		.meaning {
+			/*color: black;*/
+			font-size: 40%;
+			font-family: "Arial";
+			/*"Times New Roman";*/
+			word-wrap: break-word;
+			/*flex: 1;*/
+			direction: rtl;
+			/*ltr;*/
+			text-align: right;
+
+			/*text-decoration: none;
+			padding: 5px;
+			text-shadow: 1px 1px 1px white;*/
+		}
+
+		.flex>section {
+			min-width: 20px;
+			flex: 1 1 auto;
+			display: flex;
+			justify-content: top;
+			flex-direction: column;
+			/*; agar arab dan artinya atas dan bawah row*/
+			margin-right: 2px;
+			margin-left: 2px;
+			/*border-top: 1px solid #999; */
+			/*semua flex diberi border untuk debug*/
+			/*border: border-bottom;
+			border: 1px solid #999;*/
+		}
+
+		.ayaText {
+			direction: rtl;
+			font-size: 1.15em;
+			font-family: "Niloofar";
+			text-align: right;
+			width: 412px;
+			margin: 0px 30px;
+			padding: 16px 14px;
+			color: black;
+		}
+
+		.verseContent {
+			/*color: black;*/
+			font-size: 100%;
+			font-size: 1.2em;
+			font-family: Neirizi;
+			direction: rtl;
+			padding: 5px 5px;
+			/*text-decoration: none;
+			padding: 5px;
+			text-shadow: 1px 1px 1px white;*/
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="flex">
+		<section><span class="verseContent">قُل </span><span class="meaning">(katakanlah)</span></section>
+		<section><span class="verseContent">لِّلَّذِينَ </span><span class="meaning">(kepada orang-orang yang)</span>
+		</section>
+		<section><span class="verseContent">ءَامَنُوْا </span><span class="meaning">(beriman)</span></section>
+		<section><span class="verseContent">يَغْفِرُواْ </span><span class="meaning">(mereka memaafkan)</span></section>
+		<section><span class="verseContent">لِلَّذِينَ </span><span class="meaning">(kepada orang-orang yang)</span>
+		</section>
+		<section><span class="verseContent">لَا </span><span class="meaning">(tidak)</span></section>
+		<section><span class="verseContent">يَرْجُونَ </span><span class="meaning">(mereka mengharap)</span></section>
+		<section><span class="verseContent">أَيَّامَ </span><span class="meaning">(hari-hari)</span></section>
+		<section><span class="verseContent">ٱللَّهِ </span><span class="meaning">(Allah)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">لِيَجْزِىَ </span><span class="meaning">(untuk Dia memberi balasan)</span>
+		</section>
+		<section><span class="verseContent">قَوْمًۢا </span><span class="meaning">(kaum)</span></section>
+		<section><span class="verseContent">بِمَا </span><span class="meaning">(terhadap apa)</span></section>
+		<section><span class="verseContent">كَانُواْ </span><span class="meaning">(adalah mereka)</span></section>
+		<section><span class="verseContent">يَكْسِبُونَ٤١ </span><span class="meaning">(mereka kerjakan)</span>
+		</section>
+		<section><span class="verseContent">مَنْ </span><span class="meaning">(barang siapa)</span></section>
+		<section><span class="verseContent">عَمِلَ </span><span class="meaning">(berbuat)</span></section>
+		<section><span class="verseContent">صَٰلِحًا </span><span class="meaning">(kebaikan)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">فَلِنَفْسِهِۦۖ </span><span class="meaning">(maka untuk dirinya
+				sendiri)</span></section>
+		<section><span class="verseContent">وَمَنْ </span><span class="meaning">(dan barang siapa)</span></section>
+		<section><span class="verseContent">أَسَآءَ </span><span class="meaning">(berbuat kejahatan)</span></section>
+		<section><span class="verseContent">فَعَلَيْهَاۖ </span><span class="meaning">(maka atasnya)</span></section>
+		<section><span class="verseContent">ثُمَّ </span><span class="meaning">(kemudian)</span></section>
+		<section><span class="verseContent">إِلَىٰ </span><span class="meaning">(kepada)</span></section>
+		<section><span class="verseContent">رَبِّكُمْ </span><span class="meaning">(Tuhan kalian)</span></section>
+		<section><span class="verseContent">تُرْجَعُونَ٥١ </span><span class="meaning">(kalian dikembalikan)</span>
+		</section>
+		<section><span class="verseContent">وَلَقَدْ </span><span class="meaning">(dan sesungguhnya)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">ءَاتَيْنَا </span><span class="meaning">(telah Kami berikan)</span>
+		</section>
+		<section><span class="verseContent">بَنِىٓ </span><span class="meaning">(Bani)</span></section>
+		<section><span class="verseContent">إِسْرَٰٓءِيلَ </span><span class="meaning">(Israil)</span></section>
+		<section><span class="verseContent">ٱلْكِتَٰبَ </span><span class="meaning">(Al kitab)</span></section>
+		<section><span class="verseContent">وَٱلْحُكْمَ </span><span class="meaning">(dan hukkum-hukum)</span></section>
+		<section><span class="verseContent">وَٱلنُّبُوَّةَ </span><span class="meaning">(dan kenabian)</span></section>
+		<section><span class="verseContent">وَرَزَقْنَٰهُم </span><span class="meaning">(dan Kami berikan mereka
+				rezeki)</span></section>
+		<section><span class="verseContent">مِّنَ </span><span class="meaning">(dari)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">ٱلطَّيِّبَٰتِ </span><span class="meaning">(yang baik-baik)</span></section>
+		<section><span class="verseContent">وَفَضَّلْنَٰهُمْ </span><span class="meaning">(dan Kami lebihkan
+				mereka)</span></section>
+		<section><span class="verseContent">عَلَى </span><span class="meaning">(atas)</span></section>
+		<section><span class="verseContent">ٱلْعَٰلَمِينَ٦١ </span><span class="meaning">(alam semesta)</span></section>
+		<section><span class="verseContent">وَءَاتَيْنَٰهُم </span><span class="meaning">(dan Kami berikan kepada
+				mereka)</span></section>
+		<section><span class="verseContent">بَيِّنَٰتٍ </span><span class="meaning">(keterangan-keterangan)</span>
+		</section>
+		<section><span class="verseContent">مِّنَ </span><span class="meaning">(dari)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">ٱلْأَمْرِۖ </span><span class="meaning">(urusan)</span></section>
+		<section><span class="verseContent">فَمَا </span><span class="meaning">(maka tidak)</span></section>
+		<section><span class="verseContent">ٱخْتَلَفُوٓاْ </span><span class="meaning">(mereka perselisihkan)</span>
+		</section>
+		<section><span class="verseContent">إِلَّا </span><span class="meaning">(kecuali)</span></section>
+		<section><span class="verseContent">مِنۢ </span><span class="meaning">(dari)</span></section>
+		<section><span class="verseContent">بَعْدِ </span><span class="meaning">(sesudah)</span></section>
+		<section><span class="verseContent">مَا </span><span class="meaning">(apa)</span></section>
+		<section><span class="verseContent">جَآءَهُمُ </span><span class="meaning">(datang kepada mereka)</span>
+		</section>
+		<section><span class="verseContent">ٱلْعِلْمُ </span><span class="meaning">(ilmu pengetahuan)</span></section>
+		<section><span class="verseContent">بَغْيًۢا </span><span class="meaning">(kedengkian)</span></section>
+		<section><span class="verseContent">بَيْنَهُمْۚ </span><span class="meaning">(diantara mereka)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">إِنَّ </span><span class="meaning">(sesungguhnya)</span></section>
+		<section><span class="verseContent">رَبَّكَ </span><span class="meaning">(Tuhanmu)</span></section>
+		<section><span class="verseContent">يَقْضِى </span><span class="meaning">(Dia akan memutuskan)</span></section>
+		<section><span class="verseContent">بَيْنَهُمْ </span><span class="meaning">(diantara mereka)</span></section>
+		<section><span class="verseContent">يَوْمَ </span><span class="meaning">(hari)</span></section>
+		<section><span class="verseContent">ٱلْقِيَٰمَةِ </span><span class="meaning">(kiamat)</span></section>
+		<section><span class="verseContent">فِيمَا </span><span class="meaning">(tentang apa)</span></section>
+		<section><span class="verseContent">كَانُواْ </span><span class="meaning">(adalah mereka)</span></section>
+		<section><span class="verseContent">فِيهِ </span><span class="meaning">(didalamnya)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">يَخْتَلِفُونَ٧١ </span><span class="meaning">(mereka perselisihkan)</span>
+		</section>
+		<section><span class="verseContent">ثُمَّ </span><span class="meaning">(kemudian)</span></section>
+		<section><span class="verseContent">جَعَلْنَٰكَ </span><span class="meaning">(Kami jadikan kamu)</span>
+		</section>
+		<section><span class="verseContent">عَلَىٰ </span><span class="meaning">(atas)</span></section>
+		<section><span class="verseContent">شَرِيعَةٍ </span><span class="meaning">(suatu syari'at)</span></section>
+		<section><span class="verseContent">مِّنَ </span><span class="meaning">(dari)</span></section>
+		<section><span class="verseContent">ٱلْأَمْرِ </span><span class="meaning">(urusan itu)</span></section>
+		<section><span class="verseContent">فَٱتَّبِعْهَا </span><span class="meaning">(maka ikutilah ia)</span>
+		</section>
+		<section><span class="verseContent">وَلَا </span><span class="meaning">(dan jangan)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">تَتَّبِعْ </span><span class="meaning">(kamu mengikuti)</span></section>
+		<section><span class="verseContent">أَهْوَآءَ </span><span class="meaning">(keinginan)</span></section>
+		<section><span class="verseContent">ٱلَّذِينَ </span><span class="meaning">(orang-orang yang)</span></section>
+		<section><span class="verseContent">لَا </span><span class="meaning">(tidak)</span></section>
+		<section><span class="verseContent">يَعْلَمُونَ٨١ </span><span class="meaning">(mereka mengetahui)</span>
+		</section>
+		<section><span class="verseContent">إِنَّهُمْ </span><span class="meaning">(sesungguhnya mereka)</span>
+		</section>
+		<section><span class="verseContent">لَن </span><span class="meaning">(tidak)</span></section>
+		<section><span class="verseContent">يُغْنُواْ </span><span class="meaning">(mereka dapat menolak)</span>
+		</section>
+		<section><span class="verseContent">عَنكَ </span><span class="meaning">(dari kamu)</span></section>
+		<section><span class="verseContent">مِنَ </span><span class="meaning">(dari)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">ٱللَّهِ </span><span class="meaning">(Allah)</span></section>
+		<section><span class="verseContent">شَيْـًٔاۚ </span><span class="meaning">(sedikit)</span></section>
+		<section><span class="verseContent">وَإِنَّ </span><span class="meaning">(dan sesungguhnya)</span></section>
+		<section><span class="verseContent">ٱلظَّٰلِمِينَ </span><span class="meaning">(orang-orang ynag zalim)</span>
+		</section>
+		<section><span class="verseContent">بَعْضُهُمْ </span><span class="meaning">(sebagian mereka)</span></section>
+		<section><span class="verseContent">أَوْلِيَآءُ </span><span class="meaning">(penolong/pelindung)</span>
+		</section>
+		<section><span class="verseContent">بَعْضٍۖ </span><span class="meaning">(sebagian)</span></section>
+		<section><span class="verseContent">وَٱللَّهُ </span><span class="meaning">(dan Allah)</span></section>
+		<section><span class="verseContent">وَلِىُّ </span><span class="meaning">(penolong/pelindung)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">ٱلْمُتَّقِينَ٩١ </span><span class="meaning">(orang-orang yang
+				bertakwa)</span></section>
+		<section><span class="verseContent">هَٰذَا </span><span class="meaning">(ini)</span></section>
+		<section><span class="verseContent">بَصَٰٓئِرُ </span><span class="meaning">(pedoman)</span></section>
+		<section><span class="verseContent">لِلنَّاسِ </span><span class="meaning">(bagi manusia)</span></section>
+		<section><span class="verseContent">وَهُدًى </span><span class="meaning">(dan petunjuk)</span></section>
+		<section><span class="verseContent">وَرَحْمَةٌ </span><span class="meaning">(dan rahmat)</span></section>
+		<section><span class="verseContent">لِّقَوْمٍ </span><span class="meaning">(bagi kaum)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">يُوقِنُونَ٠٢ </span><span class="meaning">(mereka meyakini)</span></section>
+		<section><span class="verseContent">أَمْ </span><span class="meaning">(ataukah/apakah)</span></section>
+		<section><span class="verseContent">حَسِبَ </span><span class="meaning">(mengira)</span></section>
+		<section><span class="verseContent">ٱلَّذِينَ </span><span class="meaning">(orang-orang yang)</span></section>
+		<section><span class="verseContent">ٱجْتَرَحُواْ </span><span class="meaning">(mereka berbuat)</span></section>
+		<section><span class="verseContent">ٱلسَّيِّـَٔاتِ </span><span class="meaning">(kejahatan)</span></section>
+		<section><span class="verseContent">أَن </span><span class="meaning">(bahwa)</span></section>
+		<section><span class="verseContent">نَّجْعَلَهُمْ </span><span class="meaning">(Kami menjadikan mereka)</span>
+		</section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">كَٱلَّذِينَ </span><span class="meaning">(seperti orang-orang yang)</span>
+		</section>
+		<section><span class="verseContent">ءَامَنُوْا </span><span class="meaning">(beriman)</span></section>
+		<section><span class="verseContent">وَعَمِلُواْ </span><span class="meaning">(dan berbuat)</span></section>
+		<section><span class="verseContent">ٱلصَّٰلِحَٰتِ </span><span class="meaning">(kebaikan)</span></section>
+		<section><span class="verseContent">سَوَآءً </span><span class="meaning">(sama)</span></section>
+		<section><span class="verseContent">مَّحْيَاهُمْ </span><span class="meaning">(kehidupan mereka)</span>
+		</section>
+		<section><span class="verseContent">وَمَمَاتُهُمْۚ </span><span class="meaning">(dan kematian mereka)</span>
+		</section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">سَآءَ </span><span class="meaning">(amat buruk)</span></section>
+		<section><span class="verseContent">مَا </span><span class="meaning">(apa yang)</span></section>
+		<section><span class="verseContent">يَحْكُمُونَ١٢ </span><span class="meaning">(mereka putuskan)</span>
+		</section>
+		<section><span class="verseContent">وَخَلَقَ </span><span class="meaning">(dan menciptakan)</span></section>
+		<section><span class="verseContent">ٱللَّهُ </span><span class="meaning">(Allah)</span></section>
+		<section><span class="verseContent">ٱلسَّمَٰوَٰتِ </span><span class="meaning">(langit(jamak))</span></section>
+		<section><span class="verseContent">وَٱلْأَرْضَ </span><span class="meaning">(dan bumi)</span></section>
+	</div>
+	<div class="flex">
+		<section><span class="verseContent">بِٱلْحَقِّ </span><span class="meaning">(dengan benar)</span></section>
+		<section><span class="verseContent">وَلِتُجْزَىٰ </span><span class="meaning">(dan untuk diberi balasan)</span>
+		</section>
+		<section><span class="verseContent">كُلُّ </span><span class="meaning">(tiap-tiap)</span></section>
+		<section><span class="verseContent">نَفْسٍۭ </span><span class="meaning">(jiwa)</span></section>
+		<section><span class="verseContent">بِمَا </span><span class="meaning">(dengan apa)</span></section>
+		<section><span class="verseContent">كَسَبَتْ </span><span class="meaning">(ia usahakan)</span></section>
+		<section><span class="verseContent">وَهُمْ </span><span class="meaning">(dan mereka)</span></section>
+		<section><span class="verseContent">لَا </span><span class="meaning">(tidak)</span></section>
+		<section><span class="verseContent">يُظْلَمُونَ٢٢ </span><span class="meaning">(mereka
+				dianiaya/dirugikan)</span></section>
+	</div>
+
+</body>
+
+</html>

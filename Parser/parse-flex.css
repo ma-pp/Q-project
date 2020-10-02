@@ -1,0 +1,53 @@
+.flex {
+    height: 50px;
+    display: flex;
+    /* flex; inline-flex */
+    /*flex-wrap : wrap;*/
+    flex-direction: row;
+    /*row;*/
+    /*direction: tl;*/
+    /*align-items: flex-start;*/
+
+}
+
+.flex>section {
+    min-width: 20px;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    /*; agar arab dan artinya atas dan bawah row*/
+    margin-right: 2px;
+    margin-left: 2px;
+    /*border-top: 1px solid #999; */
+    /*semua flex diberi border untuk debug*/
+    border: border-bottom;
+    border: 1px solid #999;
+}
+.meaning {
+    /*color: black;*/
+    font-size: 0.6em;
+    font-family: "Arial";
+    /*"Times New Roman";*/
+    word-wrap: break-word;
+    /*flex: 1;*/
+    direction: rtl;
+    /*ltr;*/
+    text-align: right;
+    /*text-decoration: none;
+    padding: 5px;
+    text-shadow: 1px 1px 1px white;*/
+}
+
+.flex>section {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: top;
+    flex-direction: column;
+    align-items: center;
+    /*; agar arab dan artinya atas dan bawah row*/
+    /*border-top: 1px solid #999; */
+    /*semua flex diberi border untuk debug*/
+    /*border: border-bottom;
+    border: 1px solid #999;*/
+}

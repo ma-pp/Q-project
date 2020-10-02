@@ -1,0 +1,4 @@
+# https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/
+.vscode
+Kotlin/Simple Webserver SQlite/*.class
+/Mobile/Java/build/

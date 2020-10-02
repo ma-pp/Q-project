@@ -1,0 +1,144 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!-- Wajib ada supaya otf/ttf tampil-->
+	<style type="text/css">
+		@font-face {
+			font-family: 'Niloofar';
+			src: local('HM XNiloofar'), url('/home/u/dev/Q-Project/Parser/UthmanicHafs1 Ver13.otf') format('truetype');
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		@font-face {
+			font-family: 'Neirizi';
+			src: local('Neirizi'), url('/home/u/dev/Q-Project/Parser/UthmanicHafs1 Ver13.otf') format('truetype');
+			font-style: normal;
+			font-weight: normal;
+		}
+
+		* {
+			font-family: "Niloofar";
+			font-size: 1em;
+			/*direction: rtl;*/
+		}
+
+		.ayaNumber {
+			font-family: "Traditional Arabic", "Times New Roman";
+			font-size: medium;
+		}
+
+		body {
+			width: 400px;
+			direction: rtl;
+			flex-wrap: wrap;
+			align-items: justify;
+			justify-content: justify;
+		}
+
+		@media (max-width: 768px) {
+			body {
+				width: 100%;
+				padding-right: 0;
+			}
+
+			.verseContent {
+				font-size: 1.5rem;
+				max-width: 50px;
+			}
+			.meaning {
+				/*color: black;*/
+				font-size: 3rem;
+				font-family: "Arial";
+				/*"Times New Roman";*/
+				word-wrap: break-word;
+				text-align: center;
+			}
+
+			.flex>section {
+				justify-content: top;
+				/*; agar arab dan artinya atas dan bawah row*/
+				padding-left: 3px;
+				padding-right: 3px;
+				align-items: center;
+				padding: 0;
+				margin: auto;
+			}
+		}
+
+		.flex {
+			height: 50px;
+			display: flex;
+			/* flex; inline-flex */
+			/*flex-wrap : wrap;*/
+			flex-direction: row;
+			justify-content: space-around;
+			/*row;*/
+			/*direction: tl;*/
+			/*align-items: flex-start;*/
+		}
+
+		.meaning {
+			/*color: black;*/
+			font-size: 40%;
+			font-family: "Arial";
+			/*"Times New Roman";*/
+			word-wrap: break-word;
+			/*flex: 1;*/
+			direction: rtl;
+			/*ltr;*/
+			text-align: right;
+		
+			/*text-decoration: none;
+			padding: 5px;
+			text-shadow: 1px 1px 1px white;*/
+		}
+
+		.flex>section {
+			min-width: 20px;
+			flex: 1 1 auto;
+			display: flex;
+			justify-content: top;
+			flex-direction: column;
+			/*; agar arab dan artinya atas dan bawah row*/
+			margin-right: 2px;
+			margin-left: 2px;
+			/*border-top: 1px solid #999; */
+			/*semua flex diberi border untuk debug*/
+			/*border: border-bottom;
+			border: 1px solid #999;*/
+		}
+
+		.ayaText {
+			direction: rtl;
+			font-size: 1.15em;
+			font-family: "Niloofar";
+			text-align: right;
+			width: 412px;
+			margin: 0px 30px;
+			padding: 16px 14px;
+			color: black;
+		}
+		
+		.verseContent {
+			/*color: black;*/
+			font-size: 100%;
+			font-size: 1.2em;
+			font-family: Neirizi;
+			direction: rtl;
+			padding: 5px 5px;
+			/*text-decoration: none;
+			padding: 5px;
+			text-shadow: 1px 1px 1px white;*/
+		}
+
+	</style>
+</head>
+
+<body>
+
+	---
+
+</body>
+
+</html>
