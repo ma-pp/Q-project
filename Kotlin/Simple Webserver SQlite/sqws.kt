@@ -1,3 +1,5 @@
+//! INI FILE UNTUK COBA CONNECT SQLITE DAN MENAMPILKAN KE BROWSER DENGAN WEBSERVER
+
 import com.sun.net.httpserver.HttpServer
 import java.io.PrintWriter
 import java.net.InetSocketAddress

@@ -27,7 +27,7 @@ fun getSql(uri: String): MutableList<String> {
         p = url.split("=")[1]
     }
     
-    val conn = DriverManager.getConnection( "jdbc:sqlite:/home/u/dev/Q-db/quran.db")
+    val conn = DriverManager.getConnection( "jdbc:sqlite:./database/quran.db")
     var stmt: Statement? = null
     var resultset: ResultSet? = null
     var qlist: MutableList<String> = mutableListOf<String>() // https://stackoverflow.com/questions/37913252/kotlins-list-missing-add-remove-map-missing-put-etc
