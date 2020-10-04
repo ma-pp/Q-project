@@ -6,6 +6,6 @@ Make sure you're already install Kotlin cli
 
 ## browse
 
-type `localhost:8000/test?page=1` on application search bar. Or `localhost:8000/test?page=1:3` for a more specific search (ayah).
+type `1` on application search bar. Or `1:3` for a more specific search (ayah).
 
 ![result](./images/web_ui.png)
